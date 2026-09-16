@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 jobs:
   run-npm-test:
-    uses: ./.github/workflows/reusable.yaml #local
+    uses: ./.github/workflows/ex4.yaml #local
     #uses: {owner}/{repo}/.github/workflows/{myreusable-workflow.yaml}@main #remote
     with:
       node-version: 20
