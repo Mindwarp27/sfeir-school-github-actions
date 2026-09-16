@@ -1,4 +1,4 @@
-name: npm test-thierry
+name: npm install
 on: 
   workflow_dispatch:          
 jobs:
