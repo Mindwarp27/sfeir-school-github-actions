@@ -2,7 +2,7 @@ name: Reusable workflow - Ex4
 env:
  NODE_VERSION: 20
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
      lts:
       required: false
