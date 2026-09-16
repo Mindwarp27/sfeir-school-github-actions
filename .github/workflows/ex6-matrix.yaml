@@ -1,4 +1,4 @@
-name: ex6_matrix
+name: exercice 6 - matrix
 on:
   workflow_dispatch:
   pull_request:
