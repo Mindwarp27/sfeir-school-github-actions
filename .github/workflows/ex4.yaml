@@ -2,7 +2,7 @@ name: Reusable workflow - Ex4
 on:
   workflow_call:
     inputs:
-     lts:
+     node-version:
       required: false
       default: 'lts/*'
       type: string
@@ -15,7 +15,7 @@ jobs:
         - name : setup node
           uses: actions/setup-node@v6
           with:
-            node-version: ${{inputs.lts}}
+            node-version: ${{inputs.node-version}}
         - name: run test
           shell: bash
           run: |
