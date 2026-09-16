@@ -1,6 +1,6 @@
 name: 'Dependency Review'
 on: 
-  pull-request
+  pull-request:
 
 permissions:
   contents: read
