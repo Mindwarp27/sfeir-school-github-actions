@@ -29,6 +29,7 @@ jobs:
           shell: bash
           run: |
             npm install
+            npm version
 
   run-npm-test:
     needs: run-npm-install
