@@ -1,7 +1,13 @@
-name: reusable workflow
-on: 
+name: Reusable workflow - Ex4
+env:
+ NODE_VERSION: 20
+on:
   workflow_dispatch:
-
+    inputs:
+     lts:
+      required: false
+      default: 'lts/*'
+      type: string
 jobs:
   run-npm-test:
     runs-on: ubuntu-latest
@@ -9,12 +15,13 @@ jobs:
         - name: checkout
           uses: actions/checkout@v6
         - name : setup node
-          uses: actions/setup-node@v6
+          uses: actions/setup-node@v$6
           with:
-            node-version: 'lts/*'
+            node-version: ${{inputs.lts}}
         - name: run test
           shell: bash
           run: |
-            node -v
             echo "npm install"
             echo "npm test"
+            node-v
+
