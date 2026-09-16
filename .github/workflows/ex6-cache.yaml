@@ -1,4 +1,4 @@
-name: cache
+name: ex6-cache
 on: 
   workflow_dispatch:
 
